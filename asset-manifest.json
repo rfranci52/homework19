@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/homework19/react-click-game/friendrefactor/static/css/main.d08a38ab.chunk.css",
+    "main.js": "/homework19/react-click-game/friendrefactor/static/js/main.dcb89c5e.chunk.js",
+    "main.js.map": "/homework19/react-click-game/friendrefactor/static/js/main.dcb89c5e.chunk.js.map",
+    "runtime~main.js": "/homework19/react-click-game/friendrefactor/static/js/runtime~main.8de15db9.js",
+    "runtime~main.js.map": "/homework19/react-click-game/friendrefactor/static/js/runtime~main.8de15db9.js.map",
+    "static/js/2.e12b31cc.chunk.js": "/homework19/react-click-game/friendrefactor/static/js/2.e12b31cc.chunk.js",
+    "static/js/2.e12b31cc.chunk.js.map": "/homework19/react-click-game/friendrefactor/static/js/2.e12b31cc.chunk.js.map",
+    "index.html": "/homework19/react-click-game/friendrefactor/index.html",
+    "precache-manifest.8ce24ecb6be26b4e7401cacabde86141.js": "/homework19/react-click-game/friendrefactor/precache-manifest.8ce24ecb6be26b4e7401cacabde86141.js",
+    "service-worker.js": "/homework19/react-click-game/friendrefactor/service-worker.js",
+    "static/css/main.d08a38ab.chunk.css.map": "/homework19/react-click-game/friendrefactor/static/css/main.d08a38ab.chunk.css.map"
+  }
+}
