@@ -7,6 +7,13 @@ import Score from "./components/Score";
 
 import friends from "./friends.json";
 
+function shuffle(friends) {
+  friends.sort(() => Math.random() - 0.5);
+}
+
+
+// alert(friends);
+
 
 
 let answers =[];
@@ -19,7 +26,8 @@ let score = 0;
 //   return items[Math.floor(Math.random() * friends.length)];
 
 // }
-var randomItem =[friends[Math.floor (Math.random()*2)+1],friends[Math.floor(Math.random()*10)],  friends[Math.floor(Math.random()*12)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*10)+2],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*7)+3],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)] , friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)]  ]
+// var randomItem =[friends[Math.floor (Math.random()*2)+1],friends[Math.floor(Math.random()*10)],  friends[Math.floor(Math.random()*12)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*10)+2],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*7)+3],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)] , friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)]  ]
+
 
 
 
@@ -33,7 +41,7 @@ class App extends Component {
   
   // Setting this.state.friends to the friends json array
   state = {
-    randomItem
+    friends
     
   };
   
@@ -41,10 +49,11 @@ class App extends Component {
 
   removeFriend = id => {
 
+    this.setState( shuffle(friends))
 
 
-    var randomItem =[friends[Math.floor (Math.random()*2)+1],friends[Math.floor(Math.random()*10)],  friends[Math.floor(Math.random()*12)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*10)+2],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*7)+3],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)] , friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)]  ]
-
+    // var randomItem =[friends[Math.floor (Math.random()*2)+1],friends[Math.floor(Math.random()*10)],  friends[Math.floor(Math.random()*12)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*10)+2],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*7)+3],friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)] , friends[Math.floor(Math.random()*friends.length)],friends[Math.floor(Math.random()*friends.length)]  ]
+// 
 
     // if (id !== "used"){
     //   turns++
@@ -53,7 +62,7 @@ class App extends Component {
     // Filter this.state.friends for friends with an id not equal to the id being removed
     // const friends = this.state.friends.filter(friend => friend.id !== id);
     // Set this.state.friends equal to the new friends array
-    this.setState({ randomItem });
+    this.setState({ friends });
 
     for (var i = 0; i < friends.length; i++)
 
@@ -164,17 +173,17 @@ class App extends Component {
 </Title>
 
         
-        {this.state.randomItem.map(randomItem => (
+        {this.state.friends.map(friends => (
           
           <FriendCard
             removeFriend={this.removeFriend}
-            id={randomItem.id}
-            key={randomItem.id}
-            name={randomItem.name}
+            id={friends.id}
+            key={friends.id}
+            name={friends.name}
             
-            image={randomItem.image}
-            occupation={randomItem.occupation}
-            location={randomItem.location}
+            image={friends.image}
+            occupation={friends.occupation}
+            location={friends.location}
           />
         ))}
         
