@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/homework19/react-click-game/friendrefactor/precache-manifest.8ce24ecb6be26b4e7401cacabde86141.js"
+  "/homework19/react-click-game/friendrefactor/precache-manifest.2485e1e4f11b082f731c7c0379dae3e1.js"
 );
 
 self.addEventListener('message', (event) => {
