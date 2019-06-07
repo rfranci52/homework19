@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed14049eaeb80a68660005d98814c18f",
+    "revision": "4a169e096955992f2be12488f015c420",
     "url": "/homework19/react-click-game/friendrefactor/index.html"
   },
   {
-    "revision": "6c27bd0ffd9fcc87ff58",
+    "revision": "78356489fa08a424459e",
     "url": "/homework19/react-click-game/friendrefactor/static/css/main.d08a38ab.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/homework19/react-click-game/friendrefactor/static/js/2.884c28c3.chunk.js"
   },
   {
-    "revision": "6c27bd0ffd9fcc87ff58",
-    "url": "/homework19/react-click-game/friendrefactor/static/js/main.54307557.chunk.js"
+    "revision": "78356489fa08a424459e",
+    "url": "/homework19/react-click-game/friendrefactor/static/js/main.0010cb2b.chunk.js"
   },
   {
     "revision": "59fee3e70dcf3a68944b",
